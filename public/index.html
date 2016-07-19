@@ -8,21 +8,22 @@
   <body ng-controller="mainCtrl">
     <div>
       <h1>Go away! It isn't ready yet!</h1>
+      <div ng-hide="true">
+        <div class="nav">
+          <button ui-sref="home">Home</button>
+          <button ui-sref="blag">Blag</button>
+          <button ui-sref="contact">Contact</button>
+        </div>
 
-      <div class="nav">
-        <button ui-sref="home">Home</button>
-        <button ui-sref="blag">Blag</button>
-        <button ui-sref="contact">Contact</button>
+
+        <div>
+          <ui-view></ui-view>
+        </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+      <script src="app.js"></script>
+      <script src="mainCtrl.js"></script>
+      <script src="mainServ.js"></script>
     </div>
-
-    <div>
-      <ui-view></ui-view>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
-    <script src="app.js"></script>
-    <script src="mainCtrl.js"></script>
-    <script src="mainServ.js"></script>
-
   </body>
 </html>
