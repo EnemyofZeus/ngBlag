@@ -1,0 +1,13 @@
+body {
+  background-image: url('./spam.jpg');
+  background-repeat: repeat;
+  color:white;
+  align-items: center;
+}
+h1 {
+  font-size: 96px;
+}
+.animated.ng-enter-stagger {
+  transition-delay: 0.3s;
+  animation-delay: 0.3s;
+}

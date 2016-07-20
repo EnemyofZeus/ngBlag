@@ -3,7 +3,7 @@ angular.module('blag',['ui.router'])
   $stateProvider
   .state("home",{
     url:"/",
-    templateUrl:"./templates/home.html"
+    templateUrl:"./templates/spam.html"
   }).state("blag", {
     url:"/blag",
     templateUrl:"./templates/blag.html"

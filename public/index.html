@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Dubious At Best</title>
+    <link rel="stylesheet" href="/views/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   </head>
   <body ng-controller="mainCtrl">
     <div>
       <h1>Go away! It isn't ready yet!</h1>
+      <div>
+
+      </div>
       <div ng-hide="true">
         <div class="nav">
           <button ui-sref="home">Home</button>
           <button ui-sref="blag">Blag</button>
           <button ui-sref="contact">Contact</button>
-        </div>
-
-
-        <div>
           <ui-view></ui-view>
         </div>
+
+
+
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
       <script src="app.js"></script>
