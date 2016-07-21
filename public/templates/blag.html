@@ -1,3 +1,10 @@
 <div>
   <h1>Here we will put the blag stuff</h1>
+
+  <div ng-repeat='blag in blags'>
+    <h2>{{blag.title}}</h2>
+    <h3>{{blag.description}} {{blag.date}}</h3>
+
+    <p>{{blag.body}}</p>
+  </div>
 </div>
