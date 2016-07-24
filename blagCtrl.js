@@ -2,11 +2,14 @@ var blagModel = require('./blagModel.js');
 
 module.exports = {
   create: function(req, res){
-    if(err){
-      res.send(er)
-    }
-      res.send(result)
-  },
+    var blag = new blagModel(req.body);
+    blag.save(function(err, result){
+      if(err){
+        res.send(err)
+      }
+        res.send(result)
+      });
+    },
   read: function(req, res){
     blagModel
     .find(req.query)

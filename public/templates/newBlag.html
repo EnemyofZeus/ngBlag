@@ -1,0 +1,16 @@
+<form >
+  <fieldset class="form-group">
+    <label for="blagTitle">Title</label>
+    <input type="text" class="form-control" id="title" ng-model="blag.title">
+
+    <label for="blagDescription">Description</label>
+    <input type="text" class="form-control" id="blagDescription" ng-model="blag.description">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="blagBody">Body</label>
+    <textarea class="form-control" id="blagBody" ng-model="blag.body" rows="2"></textarea>
+    <input type="submit" ng-click="postBlag(blag)" value="Submit" />
+
+  </fieldset>
+
+</form>

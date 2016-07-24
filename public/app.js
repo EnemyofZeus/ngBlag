@@ -10,6 +10,9 @@ angular.module('blag',['ui.router'])
   }).state("contact",{
     url:"/contact",
     templateUrl:"./templates/contact.html"
+  }).state("newBlag",{
+    url:"/newblag",
+    templateUrl:"./templates/newBlag.html"
   })
   $urlRouterProvider.otherwise('/');
 });
