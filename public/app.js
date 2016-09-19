@@ -13,6 +13,9 @@ angular.module('blag',['ui.router'])
   }).state("newBlag",{
     url:"/newblag",
     templateUrl:"./templates/newBlag.html"
+  }).state("login",{
+    url:"/login",
+    templateUrl:"./templates/login.html"
   })
   $urlRouterProvider.otherwise('/');
 });
